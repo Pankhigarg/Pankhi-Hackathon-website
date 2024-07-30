@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <script src="script.js"></script>
+    <style>
+
+.container{
+       background-color: rgba(50, 18, 80, 0.515);
+       } 
+input{
+      font-size: 1rem;
+      outline: none;
+      background: transparent;
+      text-decoration-color:azure;
+    }
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.back-video3{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(1.1);
+opacity: 0.85;
+}
+
+@media(min-aspect-ratio:16/9){
+    .back-video3{
+         width: 100%;
+         height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .back-video3{
+         width: auto;
+         height: 100%;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop muted plays-inline class="back-video3">
+            <source src="120172-720504774_large.mp4" type="video/mp4">
+        </video>
+    <h1> REGISTERATION FOR HACKATHON </h1>
+</br>
+<b>
+    <h2>
+<fieldset>
+    <legend>Personal Information</legend>
+<label for="first name"> Name: </label>
+<input type="text" name="name" id="first name">
+<br>
+<br>
+<label for="emailid"> Email: </label>
+<input type="text" name="emailid" id="emailid">
+<br>
+<br>
+<label for="number"> Phone No. : </label>
+<input type="text" name="mobile no." id="number">
+<br>
+<br>
+<label for="DOB">Date of birth  </label>
+<input type="date" name="datepicker" id="DOB">
+<br>
+<br>
+<label>Gender</label>
+<br>
+
+<label for="sex1">Male </label>
+<input type="radio" name="gender" id="sex1">
+<label for="sex2">Female</label>
+<input type="radio" name="gender" id="sex2">
+<br>
+<br>
+<label for="counter"> NO. Of Team Members </label>
+</br>
+<input type="number" name="counter" id="counter" min="0" max=""10>
+
+</br>
+</fieldset>
+
+    <br>
+    <br>
+    <fieldset>
+    <legend>Educational Information</legend>
+<label for="INSITITUE"> INSTITUTE </label>
+<input type="text" name="add" id="INSTITUTE">
+
+<label for="select"> YEAR </label>
+<select name="YEAR" id="YEAR">YEAR
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+
+</select>
+
+<label for="state">STATE </label>
+<input type="text" name="state" id="state">
+
+<label for="city"> CITY </label>
+<input type="text" name="city" id="city">
+</fieldset>
+</br>
+</br>
+<fieldset>
+    <legend id="ADD">Team Members Information</legend>
+<label for="MEM1name"> Member </label>
+<input type="text" name="name" id=" MEM1name">
+<br>
+<br>
+<label for="emailid"> Email </label>
+<input type="text" name="emailid" id="emailid">
+<br>
+<br>
+<button id="add-member">Add Member </button>
+<br>
+<br>
+</fieldset>
+</div>
+  <br>
+  <br>  
+<button><b>REGISTER</b></button>
+</b>
+</h2>
+</body>
+</html>
