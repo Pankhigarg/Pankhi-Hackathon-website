@@ -97,13 +97,13 @@ video {
 }
 
 .feature-title{
-    color: white;
+    color: rgb(23, 22, 22);
     font-weight: bold;
     font-size: 1.3rem;
 }
 
 .feature-description{
-    color: white;
+    color:  rgb(41, 38, 38);
 }
 
 .feature-card:nth-child(1){
